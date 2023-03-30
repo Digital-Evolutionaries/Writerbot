@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Writing Prompt Tool</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Writing Prompt Tool</h1>
+		<p>Get inspired with our writing prompts</p>
+	</header>
+	<main>
+		<form>
+			<h2>Select a Genre</h2>
+			<select id="genre-select">
+				<option value="">Choose a genre</option>
+				<option value="action">Action</option>
+				<option value="romance">Romance</option>
+				<option value="mystery">Mystery</option>
+				<option value="sci-fi">Sci-Fi</option>
+			</select>
+			<h2>Choose a Theme</h2>
+			<div class="theme-options">
+				<label><input type="checkbox" name="themes" value="love"> Love</label>
+				<label><input type="checkbox" name="themes" value="betrayal"> Betrayal</label>
+				<label><input type="checkbox" name="themes" value="adventure"> Adventure</label>
+				<label><input type="checkbox" name="themes" value="discovery"> Discovery</label>
+			</div>
+			<button id="generate-prompt-btn" type="submit">Generate Prompt</button>
+		</form>
+		<div id="prompt-output"></div>
+		<div id="prompt-feedback"></div>
+	</main>
+	<footer>
+		<p>© 2023 Writing Prompt Tool</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
